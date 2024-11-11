@@ -19,7 +19,7 @@ class Post extends Model
     public function image(): Attribute
     {
         return Attribute::make(
-            get: fn ($image) => url('/storage/public/post/' . $image),
+            get: fn ($image) => url('/storage/public/posts/' . $image),
         );
     }
 }
